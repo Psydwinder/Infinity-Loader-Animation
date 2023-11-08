@@ -1,0 +1,27 @@
+body{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: #181818;
+}
+
+.loading{
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    animation : fadeIn 2s;
+    animation-timing-function: cubic-bezier(0.7, 0, 1, 2); 
+}
+
+.first-circle, .second-circle, .third-circle, .fourth-circle{
+    position: absolute;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    animation: horizontal 2s infinite, vertical 1s infinite;
+    animation-timing-function: cubic-bezier(0.3,0,0.7,1), ease-in-out;
+    animation-delay: 0s,0.25s;
+    box-shadow: 0px, 4px, 8px skyblue;
+;
+}
