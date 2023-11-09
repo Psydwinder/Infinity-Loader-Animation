@@ -1,4 +1,27 @@
-body{
+body {
+    background-color: #fff;
+}
+
+.loading {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.loading svg{
+    position: absolute;
+    inset: 0;
+    margin: auto; 
+}
+
+#infinity-outline{
+    fill: transparent;
+    stroke-width: 10;
+    
+    stroke-dashoffset: 100px;
+    stroke: #ff5ee4;
+}
+/* body{
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -22,6 +45,37 @@ body{
     animation: horizontal 2s infinite, vertical 1s infinite;
     animation-timing-function: cubic-bezier(0.3,0,0.7,1), ease-in-out;
     animation-delay: 0s,0.25s;
-    box-shadow: 0px, 4px, 8px skyblue;
-;
+    box-shadow: 0px 4px 8px skyblue;
 }
+
+.second-circle{
+    animation-delay: 0.2s, 0.45s;
+    opacity: 0.7;
+}
+
+.third-circle{
+    animation-delay: 0.4s, 0.65s;
+    opacity: 0.5;
+}
+
+.fourth-circle{
+    animation-delay: 0.6s, 0.85s;
+    opacity: 0.7;
+}
+
+@keyframes horizontal {
+    0%{ left:-150px}
+    50%{ left: 150px}
+    100%{ left: -150px}
+}
+
+@keyframes vertical {
+    0%{ top: -50px}
+    50%{ top: 50px}
+    100%{ top: -50px}
+}
+
+@keyframes fadeIn {
+    0%{ opacity: 0}
+    100%{ opacity: 2}
+} */
