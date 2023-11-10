@@ -12,16 +12,16 @@
         <span class="second-circle"></span>
         <span class="third-circle"></span>
         <span class="fourth-circle"></span> -->
-        <svg viewBox="0 0 1180.89 683.85">
+        <svg viewBox="-100 -100 1180.89 683.85">
             <defs>
-                <filter id="p1" x="-50%" y="-50%" filterUnits= "userSpaceOnUse" width="200%" height="200%">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur5" />
+                <filter id="p1" x="-50%" y="-50%" width="200%" height="200%">
+                     
                       <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur10" />
                       <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur20" />
                       <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur30" />
                       <feGaussianBlur in="SourceGraphic" stdDeviation="50" result="blur50" />
                 <feMerge result="blur-merged">
-                    <feMergeNode in="blur10"/>
+                    <feMergeNode in="blur10"/> 
                     <feMergeNode in="blur20"/>
                     <feMergeNode in="blur30"/>
                     <feMergeNode in="blur50"/>
@@ -31,22 +31,11 @@
                     <feMergeNode in="SourceGraphic"/>
                 </feMerge>
                 </filter>
-                <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fff;
-                  stroke-miterlimit: 10;
-                }
-                </style>
             </defs>
-            <g id="infinity-outline">
-              <path d="m149.21,341.92c0,101.87,82.58,184.44,184.44,184.44,134.66,0,255.44-184.44,255.44-184.44,0,0-119.26-184.44-255.44-184.44-101.87,0-184.44,82.58-184.44,184.44Z" filter="url(#p1)"/>
-              <path d="m1031.68,341.92c0,101.87-82.58,184.44-184.44,184.44-134.66,0-255.44-184.44-255.44-184.44,0,0,119.26-184.44,255.44-184.44,101.87,0,184.44,82.58,184.44,184.44Z" filter="url(#p1)"/>
-            </g>
-            <g id="infinity-background">
-              <path class="cls-1" d="m149.21,341.92c0,101.87,82.58,184.44,184.44,184.44,134.66,0,255.44-184.44,255.44-184.44,0,0-119.26-184.44-255.44-184.44-101.87,0-184.44,82.58-184.44,184.44Z" />
-              <path class="cls-1" d="m1031.68,341.92c0,101.87-82.58,184.44-184.44,184.44-134.66,0-255.44-184.44-255.44-184.44,0,0,119.26-184.44,255.44-184.44,101.87,0,184.44,82.58,184.44,184.44Z"/>
-            </g>
+            
+              <path id="infinity-outline" stroke-linecap="round" stroke-linejoin="round" d="m438.62,186.23s118.92,185.44,253.44,185.44c115.7,0,184.44-93.3,184.44-185.44C876.5,52.67,763.84,1.03,693.31,1.03c-238.4,0-272.61,370.76-507.25,370.76C71.42,371.79.5,279.9.5,186.23.5,63.9,104.61.5,186.23.5c88.42,0,180.85,84.34,252.39,185.73Z" filter="url(#p1)"/>
+              <path id="infinity-background" stroke-linecap="round" stroke-linejoin="round" d="m438.62,186.23s118.92,185.44,253.44,185.44c115.7,0,184.44-93.3,184.44-185.44C876.5,52.67,763.84,1.03,693.31,1.03c-238.4,0-272.61,370.76-507.25,370.76C71.42,371.79.5,279.9.5,186.23.5,63.9,104.61.5,186.23.5c88.42,0,180.85,84.34,252.39,185.73Z" />
+            
           </svg>
        
     </div>

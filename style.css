@@ -1,25 +1,37 @@
 body {
-    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-.loading {
+.loading{
     position: absolute;
-    inset: 0;
-    margin: auto;
+    inset:0;
+    margin: 100px 100px; 
 }
 
-.loading svg{
-    position: absolute;
-    inset: 0;
-    margin: auto; 
-}
-
-#infinity-outline{
+#infinity-outline {
     fill: transparent;
-    stroke-width: 10;
-    
-    stroke-dashoffset: 100px;
+    stroke-width: 50;
+    stroke-dasharray: 20px, 2500px;
+    stroke-dashoffset: 0;
     stroke: #ff5ee4;
+    
+    animation: animate 3000ms linear infinite;
+}
+
+
+
+#infinity-background {
+    fill: transparent;
+    stroke-width: 50;
+    stroke: #424242;
+    opacity: 0.2;
+    z-index: -10;
+}
+
+@keyframes animate {
+    
 }
 /* body{
     overflow: hidden;
