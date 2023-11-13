@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: black;
 }
 
 .loading{
@@ -12,27 +12,46 @@ body {
 
 #infinity-outline {
     fill: transparent;
-    stroke-width: 50;
-    stroke-dasharray: 20px, 2500px;
+    stroke-width: 100;
+    stroke-dasharray: 40px, 4000px;
     stroke-dashoffset: 0;
     stroke: #ff5ee4;
-    
-    animation: animate 3000ms linear infinite;
+    animation: animate 3s infinite linear;
 }
-
-
 
 #infinity-background {
     fill: transparent;
-    stroke-width: 50;
+    stroke-width: 100;
     stroke: #424242;
     opacity: 0.2;
-    z-index: -10;
 }
 
 @keyframes animate {
+    0% {
+        stroke-dasharray: 40px, 4000px;
+        stroke-dashoffset: 0;
+    }
+    25% {
+        stroke-dasharray: 400px, 4000px;
+        stroke-dashoffset: -600;
+    }
+    50% {
+        stroke-dasharray: 800px, 4000px;
+        stroke-dashoffset: -1400;
+    }
+    75% {
+        stroke-dasharray: 1600px, 4000px;
+        stroke-dashoffset: -2500;
+    }
+    100% {
+        stroke-dasharray: 2500px, 4000px;
+        stroke-dashoffset: -2500; 
+    }
     
 }
+
+
+
 /* body{
     overflow: hidden;
     align-items: center;
