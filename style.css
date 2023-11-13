@@ -12,11 +12,11 @@ body {
 
 #infinity-outline {
     fill: transparent;
-    stroke-width: 100;
-    stroke-dasharray: 40px, 4000px;
-    stroke-dashoffset: 0;
+    stroke-width: 10;
+    stroke-dasharray: 300px, 2400px;
     stroke: #ff5ee4;
     animation: animate 3s infinite linear;
+    animation-delay: -1.5s;
 }
 
 #infinity-background {
@@ -27,27 +27,12 @@ body {
 }
 
 @keyframes animate {
-    0% {
-        stroke-dasharray: 40px, 4000px;
-        stroke-dashoffset: 0;
+    0%{
+        stroke-dashoffset: 100 ;
     }
-    25% {
-        stroke-dasharray: 400px, 4000px;
-        stroke-dashoffset: -600;
+    100%{
+        stroke-dashoffset: 2800 ;
     }
-    50% {
-        stroke-dasharray: 800px, 4000px;
-        stroke-dashoffset: -1400;
-    }
-    75% {
-        stroke-dasharray: 1600px, 4000px;
-        stroke-dashoffset: -2500;
-    }
-    100% {
-        stroke-dasharray: 2500px, 4000px;
-        stroke-dashoffset: -2500; 
-    }
-    
 }
 
 
