@@ -13,10 +13,10 @@ body {
 #infinity-outline {
     fill: transparent;
     stroke-width: 10;
-    stroke-dasharray: 300px, 2400px;
+    stroke-dasharray: 300px, 2500px;
     stroke: #ff5ee4;
-    animation: animate 3s infinite linear;
-    animation-delay: -1.5s;
+    animation: animate 2s infinite linear;
+    animation-delay: -2s;
 }
 
 #infinity-background {
@@ -27,13 +27,15 @@ body {
 }
 
 @keyframes animate {
-    0%{
-        stroke-dashoffset: 100 ;
+    0% {
+        stroke-dashoffset: 100
     }
-    100%{
-        stroke-dashoffset: 2800 ;
+    100% {
+        stroke-dashoffset: 2970;
     }
 }
+
+
 
 
 
